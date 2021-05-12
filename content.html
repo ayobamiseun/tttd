@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- favicon -->
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <!-- EXTERNAL LINKS -->
+    <script src="js/jQuery3.4.1.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<style>
+    #row {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-family: 'Open Sans', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 13px;
+        color: #626262;
+        line-height: 23px;
+        letter-spacing: 0.02em;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        -webkit-transition-timing-function: ease-in-out;
+        -webkit-transition-duration: .2s;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    
+    #first {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-family: 'Open Sans', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 13px;
+        color: #626262;
+        line-height: 23px;
+        letter-spacing: 0.02em;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        -webkit-transition-timing-function: ease-in-out;
+        -webkit-transition-duration: .2s;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 33.33333333%;
+    }
+    
+    #second {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-family: 'Open Sans', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 13px;
+        color: #626262;
+        line-height: 23px;
+        letter-spacing: 0.02em;
+        margin: 0px;
+        box-sizing: border-box;
+        -webkit-transition-timing-function: ease-in-out;
+        -webkit-transition-duration: .2s;
+        position: relative;
+        min-height: 1px;
+        float: left;
+        width: 33.33333333%;
+        padding: 0 !important;
+        border: 1px solid #e5e5e5;
+    }
+    
+    #third {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-family: 'Open Sans', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 13px;
+        color: #626262;
+        line-height: 23px;
+        letter-spacing: 0.02em;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        -webkit-transition-timing-function: ease-in-out;
+        -webkit-transition-duration: .2s;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 33.33333333%;
+    }
+    
+    #owl-demo .owl-item div {
+        padding: 5px;
+    }
+    
+    #owl-demo .owl-item img {
+        display: block;
+        width: 100%;
+        height: auto;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+</style>
+
+<body>
+    <div class="container" style="    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;">
+
+        <div class="row" id="roww">
+            <div class="col-md-4 col-sm-4" id="first">
+                <!-- shop item -->
+                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
+                    <a href="shoes.php"><img src="./show/File_006 copy.jpeg" alt="" style="height: 250px; width:100%;"></a>
+                    <span class="product-name text-uppercase"><a href="shoes.php">Collection</a></span>
+                </div>
+                <!-- end shop item -->
+                <!-- shop item -->
+                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-bottom">
+                    <a href="tunic.php"><img src="./show/File_007 copy.jpeg" alt="" style="height: 250px; width:100%;"></a>
+                    <span class="product-name text-uppercase"><a href="tunic.php">Collection</a></span>
+                </div>
+                <!-- end shop item -->
+            </div>
+            <div class="col-md-4 col-sm-4 " id="second">
+                <!-- shop item slider -->
+
+                <div id="2"></div>
+                <script>
+                    load("sd.html");
+
+                    function load(url) {
+                        req = new XMLHttpRequest();
+                        req.open("GET", url, false);
+                        req.send(null);
+                        document.getElementById(2).innerHTML = req.responseText;
+                    }
+                </script>
+                <!-- <div id="owl-demo-small" class="owl-carousel " style="opacity: 1; display: block;">
+                    <div id="2"></div>
+                <script>
+                    load("sd.html");
+
+                    function load(url) {
+                        req = new XMLHttpRequest();
+                        req.open("GET", url, false);
+                        req.send(null);
+                        document.getElementById(2).innerHTML = req.responseText;
+                    }
+                </script>
+
+
+                    <div class="owl-controls clickable ">
+                        <div class="owl-pagination ">
+                            <div class="owl-page "><span class=" "></span></div>
+                            <div class="owl-page active "><span class=" "></span></div>
+                            <div class="owl-page "><span class=" "></span></div>
+                        </div>
+                        <div class="owl-buttons ">
+                            <div class="owl-prev "><i class="fa fa-angle-left "></i></div>
+                            <div class="owl-next "><i class="fa fa-angle-right "></i></div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- end shop item -->
+                <div class="exclusive-style-text text-center " style="width:200px">
+                    <p class="text-med font-weight-600 black-text text-uppercase letter-spacing-2 ">How To Buy</p>
+                    <p class="sm-display-none ">Get in touch with us!</p>
+                    <a class="highlight-button-dark btn btn-small no-margin-right no-margin-bottom margin-three " href="contact.php ">Kontact Us</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 " id="third ">
+                <!-- shop item -->
+                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top ">
+                    <a href="shirts.php "><img src="./show/IMG_6600.JPG " alt=" " style="height: 250px; width:100%;"></a>
+                    <span class="product-name text-uppercase "><a href="shirts.php ">Shirt Kollection</a></span>
+                </div>
+                <!-- end shop item -->
+                <!-- shop item -->
+                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-bottom ">
+                    <a href="fila.php "><img src="./show/IMG_5629 copy.JPG " alt=" " style="height: 250px; width:100%;"></a>
+                    <span class="product-name text-uppercase "><a href="fila.php ">Accessories</a></span>
+                </div>
+                <!-- end shop item -->
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#containerSlider').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    });
+</script>
+<script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+</html> slidesToScroll: 1, autoplay: true, autoplaySpeed: 2000, }); });
+</script>
+<script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+</html>
